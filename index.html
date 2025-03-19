@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .active-sort { background-color: #e5e7eb; }
+        .product-card:hover { background-color: #f9fafb; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="border-b">
+        <div class="bg-gray-100 p-2 flex flex-wrap justify-between text-sm">
+            <div>📞 +7 (495) 123-45-67 | Пн-Пт 9-18 | ✉ info@example.com | Ваш город: Москва</div>
+            <div><a href="#" class="text-blue-500">Войти / Регистрация</a></div>
+        </div>
+        <div class="flex items-center justify-between p-4">
+            <div class="text-2xl font-bold">LOGO</div>
+            <input type="text" placeholder="Поиск по магазину..." class="border p-2 w-1/2 rounded">
+            <div class="w-8 h-8">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>
+            </div>
+        </div>
+        <nav class="bg-gray-200 p-2">
+            <ul class="flex gap-4 justify-center">
+                <li class="relative group cursor-pointer">Каталог
+                    <ul class="absolute hidden group-hover:block bg-white border mt-1 p-2">
+                        <li><a href="#">Шины</a></li>
+                        <li><a href="#">Диски</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Новости</a></li>
+                <li class="relative group cursor-pointer">Контакты
+                    <ul class="absolute hidden group-hover:block bg-white border mt-1 p-2">
+                        <li><a href="#">Форма связи</a></li>
+                        <li><a href="#">Карта</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+
+        <div class="flex flex-col md:flex-row gap-6">
+		
+            <aside class="w-full md:w-1/4 border p-4 rounded">
+                <h3 class="font-bold mb-2">Производитель</h3>
+                <label><input type="checkbox"> Япония</label><br>
+                <label><input type="checkbox"> Китай</label><br>
+                <label><input type="checkbox"> Корея</label><br>
+
+                <h3 class="font-bold mt-4 mb-2">Цвет</h3>
+                <label><input type="checkbox"> Красный</label><br>
+                <label><input type="checkbox"> Зеленый</label><br>
+                <label><input type="checkbox"> Синий</label><br>
+
+                <h3 class="font-bold mt-4 mb-2">Размер</h3>
+                <label><input type="checkbox"> 1 size</label><br>
+                <label><input type="checkbox"> 2 size</label><br>
+                <label><input type="checkbox"> 3 size</label><br>
+
+                <div class="mt-4 flex gap-2">
+                    <button class="bg-blue-500 text-white px-4 py-1 rounded">Применить</button>
+                    <button class="border px-4 py-1 rounded">Сбросить</button>
+                </div>
+            </aside>
+
+            <section class="w-full md:w-3/4">
+                <div class="flex flex-wrap justify-between items-center mb-4 gap-2">
+                    <div class="flex gap-2 items-center">
+                        <span>Сортировать:</span>
+                        <button class="px-2 py-1 border rounded active-sort">По названию</button>
+                        <button class="px-2 py-1 border rounded">По цене</button>
+                        <button class="px-2 py-1 border rounded">По популярности</button>
+                    </div>
+                    <div class="flex gap-2">
+                        <button><svg width="24" height="24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+                        <button><svg width="24" height="24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="border rounded p-2 product-card">
+                        <img src="img/1.jpg" alt="Product">
+                        <div class="text-center mt-2">Товар 1</div>
+                        <div class="text-center font-bold">9 999 ₽</div>
+                    </div>
+                    <div class="border rounded p-2 product-card">
+                        <img src="img/2.jpg" alt="Product">
+                        <div class="text-center mt-2">Товар 2</div>
+                        <div class="text-center font-bold">5 499 ₽</div>
+                    </div>
+                    <div class="border rounded p-2 product-card">
+                        <img src="img/3.jpg" alt="Product">
+                        <div class="text-center mt-2">Товар 3</div>
+                        <div class="text-center font-bold">12 300 ₽</div>
+                    </div>
+					<div class="border rounded p-2 product-card">
+                        <img src="img/4.jpg" alt="Product">
+                        <div class="text-center mt-2">Товар 1</div>
+                        <div class="text-center font-bold">9 999 ₽</div>
+                    </div>
+                    <div class="border rounded p-2 product-card">
+                        <img src="img/5.jpg" alt="Product">
+                        <div class="text-center mt-2">Товар 2</div>
+                        <div class="text-center font-bold">5 499 ₽</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+		
+		<h2 class="text-xl mb-4">Все производители</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <img src="https://www.logobank.ru/images/ph/en/a2/audi_new.png" alt="Audi">
+            <img src="https://www.logobank.ru/images/ph/en/n/nissan.png" alt="Nissan">
+            <img src="https://www.logobank.ru/images/ph/en/t/toyota.png" alt="Toyota">
+            <img src="https://www.logobank.ru/images/ph/en/b/bmw.png" alt="BMW">
+            <img src="https://www.logobank.ru/images/ph/en/m/mitsubishi.png" alt="Mitsubishi">
+            <img src="https://www.logobank.ru/images/ph/en/h/hyundai.png" alt="Hyundai">
+            <img src="https://www.logobank.ru/images/ph/en/f/ford.png" alt="Ford">
+            <img src="https://www.logobank.ru/images/ph/en/v/vw.png" alt="Volkswagen">
+        </div>
+		
+		
+		
+    </main>
+
+    <footer class="bg-gray-100 p-4 mt-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+                <h4 class="font-bold">Каталог товаров</h4>
+                <ul>
+                    <li>Шины и диски</li>
+                    <li>Рулевое управление</li>
+                    <li>Аксессуары</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">О нас</h4>
+                <ul>
+                    <li>Каталог</li>
+                    <li>Главная</li>
+                    <li>Новости</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-between border-t pt-2 text-sm">
+            <span>© Интернет-магазин, 2005-2025</span>
+            <div class="flex gap-2">
+                <svg width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>
+                <svg width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>
+                <svg width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
