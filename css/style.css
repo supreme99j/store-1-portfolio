@@ -5,3 +5,46 @@
 .bg-gray-200 { background: #F0AE2C; }
 .left-aside { background: #FBF7F7; }
 .main-products { margin-bottom: 40px; }
+.contacts-footer {
+	height: 26px;
+	gap: 2.5rem;
+}
+
+.contacts-header, .sign-in-header {
+	display: flex;    
+	font-size: 20px;
+}
+
+.contacts-header img {
+	height: 22px;
+	margin: 0 10px 0 30px;
+}
+
+.list-style-button {
+	gap: 1.5rem;
+}
+
+.list-style-button button {
+	height: 22px;
+}
+
+.list-style-button button img {
+	height: 100%;
+}
+
+.search {
+	display: flex;
+	width: 50%;
+}
+
+.search input {
+	width: 90%;
+}
+
+.search img {
+	height: 30px;
+	width: 10%;
+	margin: auto;
+}
+
+

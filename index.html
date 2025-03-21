@@ -11,12 +11,19 @@
 <body class="flex flex-col min-h-screen">
     <header class="border-b">
         <div class="bg-gray-100 p-2 flex flex-wrap justify-between text-sm">
-            <div>📞 +7 (495) 123-45-67 | Пн-Пт 9-18 | ✉ info@example.com | Ваш город: Москва</div>
-            <div><a href="#" class="text-blue-500">Войти / Регистрация</a></div>
+            <div class="contacts-header">
+				<img src="img/phone-calling-svgrepo-com.svg">+7 (495) 123-45-67  (Пн-Пт 9-18)
+				<img src="img/mail-alt-svgrepo-com.svg">info@example.com  
+				<img src="img/geo-alt-svgrepo-com.svg">Ваш город: Москва
+			</div>
+            <div class="sign-in-header"><a href="#" class="text-blue-500">Войти / Регистрация</a></div>
         </div>
         <div class="flex items-center justify-between p-4 header-2">
             <div class="text-2xl font-bold"><img src="img/logo.webp" alt="Logo" style="height: 74px;"></div>
-            <input type="text" placeholder="Поиск по магазину..." class="border p-2 w-1/2 rounded">
+			<div class="search">
+				<input type="text" placeholder="Поиск по магазину..." class="border p-2 w-1/2 rounded">
+				<img src="img/search-svgrepo-com.svg">
+			</div>
             <div class="w-8 h-8">
                 <img src="img/shoppingcart_80945.svg" alt="Корзина">
             </div>
@@ -76,9 +83,9 @@
                         <button class="px-2 py-1 border rounded">По цене</button>
                         <button class="px-2 py-1 border rounded">По популярности</button>
                     </div>
-                    <div class="flex gap-2">
-                        <button><svg width="24" height="24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button>
-                        <button><svg width="24" height="24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+                    <div class="flex gap-2 list-style-button">
+                        <button><img src="img/menu-2-svgrepo-com.svg"></button>
+                        <button><img src="img/list-svgrepo-com.svg"></button>
                     </div>
                 </div>
 
@@ -100,13 +107,13 @@
                     </div>
 					<div class="border rounded p-2 product-card">
                         <img src="img/4.jpg" alt="Product">
-                        <div class="text-center mt-2">Товар 1</div>
-                        <div class="text-center font-bold">9 999 ₽</div>
+                        <div class="text-center mt-2">Товар 4</div>
+                        <div class="text-center font-bold">2 999 ₽</div>
                     </div>
                     <div class="border rounded p-2 product-card">
                         <img src="img/5.jpg" alt="Product">
-                        <div class="text-center mt-2">Товар 2</div>
-                        <div class="text-center font-bold">5 499 ₽</div>
+                        <div class="text-center mt-2">Товар 5</div>
+                        <div class="text-center font-bold">7 499 ₽</div>
                     </div>
                 </div>
             </section>
@@ -149,10 +156,10 @@
         </div>
         <div class="flex justify-between border-t pt-2 text-sm">
             <span>© Интернет-магазин, 2005-2025</span>
-            <div class="flex gap-2">
-                <svg width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>
-                <svg width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>
-                <svg width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>
+            <div class="flex gap-2 contacts-footer">
+                <img src="img/facebook-svgrepo-com.svg" alt="Facebook">
+                <img src="img/instagram-svgrepo-com.svg" alt="Instagram">
+                <img src="img/twitter-svgrepo-com.svg" alt="Twitter">
             </div>
         </div>
     </footer>
