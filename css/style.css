@@ -47,4 +47,14 @@
 	margin: auto;
 }
 
+/* ---------------------------------------------------------------------- */
+
+.header__nav-item {
+	display: flex;
+	white-space: nowrap;
+}
+.header__user-btn {
+	white-space: nowrap;
+}
+
 

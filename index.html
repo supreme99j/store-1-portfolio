@@ -11,12 +11,27 @@
 <body class="flex flex-col min-h-screen">
     <header class="border-b">
         <div class="bg-gray-100 p-2 flex flex-wrap justify-between text-sm">
-            <div class="contacts-header">
-				<img src="img/phone-calling-svgrepo-com.svg">+7 (495) 123-45-67  (Пн-Пт 9-18)
-				<img src="img/mail-alt-svgrepo-com.svg">info@example.com  
-				<img src="img/geo-alt-svgrepo-com.svg">Ваш город: Москва
+        
+			<nav class="header__nav">
+				<ul class="header__nav-list contacts-header">
+					<li class="header__nav-item">
+						<img src="img/phone-calling-svgrepo-com.svg">+7 (495) 123-45-67  (Пн-Пт 9-18)
+					</li>
+					<li class="header__nav-item">
+						<img src="img/mail-alt-svgrepo-com.svg">info@example.com
+					</li>
+					<li class="header__nav-item">
+						<img src="img/geo-alt-svgrepo-com.svg">Ваш город: Москва
+					</li>
+				</ul>
+			</nav>
+			
+			
+            <div class="sign-in-header">
+				<a href="#" class="header__user-btn text-blue-500">Войти</a>
+				/
+				<a href="#" class="header__user-btn text-blue-500">Регистрация</a>
 			</div>
-            <div class="sign-in-header"><a href="#" class="text-blue-500">Войти / Регистрация</a></div>
         </div>
         <div class="flex items-center justify-between p-4 header-2">
             <div class="text-2xl font-bold"><img src="img/logo.webp" alt="Logo" style="height: 74px;"></div>
