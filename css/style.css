@@ -49,12 +49,30 @@
 
 /* ---------------------------------------------------------------------- */
 
-.header__nav-item {
+.header__nav-item, .header__user-btn { white-space: nowrap; }
+.header__nav-list { 
 	display: flex;
-	white-space: nowrap;
-}
-.header__user-btn {
-	white-space: nowrap;
+	gap: 40px;
 }
 
+.header__user-nav, .header__nav-phone, .header__nav-mail, .header__nav-city {
+    position: relative;
+    padding-left: 28px;
+	font-size: 20px;
+}
 
+.header__user-nav::before, .header__nav-phone::before, .header__nav-mail::before, .header__nav-city::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.header__user-nav::before { background: url("../img/user-icon.svg") no-repeat; }
+.header__nav-phone::before { background: url("../img/phone-calling-svgrepo-com.svg") no-repeat; }
+.header__nav-mail::before { background: url("../img/mail-alt-svgrepo-com.svg") no-repeat; }
+.header__nav-city::before { background: url("../img/geo-alt-svgrepo-com.svg") no-repeat; }
