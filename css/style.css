@@ -76,3 +76,51 @@
 .header__nav-phone::before { background: url("../img/phone-calling-svgrepo-com.svg") no-repeat; }
 .header__nav-mail::before { background: url("../img/mail-alt-svgrepo-com.svg") no-repeat; }
 .header__nav-city::before { background: url("../img/geo-alt-svgrepo-com.svg") no-repeat; }
+
+/* ---------------------------------------------------------------------- */
+
+
+.aside-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.aside-checkbox .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.aside-checkbox input:checked ~ .checkmark {
+    background-color: #F9D00F; 
+    border-color: #F9D00F;
+}
+
+.aside-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.aside-checkbox input:checked ~ .checkmark::after {
+    display: block;
+}
+
+/* ---------------------------------------------------------------------- */
+
