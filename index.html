@@ -42,57 +42,54 @@
                 <img src="img/shoppingcart_80945.svg" alt="Корзина">
             </div>
         </div>
-        <nav class="bg-gray-200 p-2">
-            <ul class="flex gap-4 justify-center">
-                <li class="relative group cursor-pointer">Каталог
-                    <ul class="absolute hidden group-hover:block bg-white border mt-1 p-2">
-                        <li><a href="#">Шины</a></li>
-                        <li><a href="#">Диски</a></li>
-                        <li><a href="#">Аксессуары</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Новости</a></li>
-                <li class="relative group cursor-pointer">Контакты
-                    <ul class="absolute hidden group-hover:block bg-white border mt-1 p-2">
-                        <li><a href="#">Форма связи</a></li>
-                        <li><a href="#">Карта</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+		
+		
+		<div class="menu-container">
+			<nav>
+				<button class="menu-toggle">Меню</button>
+				<ul class="menu">
+					<li>
+						<a href="#">Каталог</a>
+						<ul class="submenu">
+							<li><a href="#">ДИСКИ</a></li>
+							<li><a href="#">СПЕЦ.ЖИДКОСТИ</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Главная</a></li>
+					<li>
+						<a href="#">Новости</a>
+						<ul class="submenu">
+							<li><a href="#">Пункт 1</a></li>
+							<li><a href="#">Пункт 2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		
     </header>
 	
 	
-	
-	
-	
-	
-	
-
     <main class="flex-grow container mx-auto p-4">
 	
-	
-	
-	<div class="news-banner">
-		<div class="slider-container">
-			<div class="slider">
-				<div class="slide">
-					<img src="img/b1.webp" alt="Slide 1">
+		<div class="news-banner">
+			<div class="slider-container">
+				<div class="slider">
+					<div class="slide">
+						<img src="img/b1.webp" alt="Slide 1">
+					</div>
+					<div class="slide">
+						<img src="img/b2.jpg" alt="Slide 2">
+					</div>
 				</div>
-				<div class="slide">
-					<img src="img/b2.jpg" alt="Slide 2">
+				
+				<div class="dots">
+					<div class="dot active" data-slide="0"></div>
+					<div class="dot" data-slide="1"></div>
 				</div>
-			</div>
-			
-			<div class="dots">
-				<div class="dot active" data-slide="0"></div>
-				<div class="dot" data-slide="1"></div>
 			</div>
 		</div>
-	</div>
-	
-	
 
         <div class="flex flex-col md:flex-row gap-6 main-products">
 		
@@ -237,6 +234,7 @@
             </div>
         </div>
     </footer>
+	<script src="js/script.js"></script>
 	<script src="js/slider.js"></script>
 </body>
 </html>
