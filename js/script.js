@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
 	const menuToggle = document.querySelector('.menu-toggle');
 	const menu = document.querySelector('.menu');
 	const menuItems = document.querySelectorAll('.menu > li');
@@ -22,3 +22,8 @@
 		});
 	}
 });
+
+function setActive(button) {
+       document.querySelectorAll(".flex button").forEach(btn => btn.classList.remove("active-sort"));
+       button.classList.add("active-sort");
+}
